@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>adf5173c-ac21-4d35-be88-cc665ec862a1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>bdc8ac55-98a5-4126-9299-bc558699fb37</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>ac780811-2aaf-4b80-bf34-de31cc069fa0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>4ff663c9-6864-41eb-a14e-91b9eabb4dad</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Common\CameraResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\CameraResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="AppView.cpp" />
+    <ClCompile Include="Content\SpatialInputHandler.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SpinningCubeRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="HoloLensDataCollectionMain.cpp" />
+    <ClCompile Include="Common\LocatableCamera.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="AppView.h" />
+    <ClInclude Include="Content\SpatialInputHandler.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\SpinningCubeRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="HoloLensDataCollectionMain.h" />
+    <ClInclude Include="Common\AsyncOperations.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BaseAttributes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ErrorHandling.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LinkList.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LocatableCamera.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\OpQueue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Content\VertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\GeometryShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\PixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Content\VPRTVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HoloLensDataCollection_TemporaryKey.pfx" />
+  </ItemGroup>
+</Project>
