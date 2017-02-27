@@ -5,7 +5,7 @@
 
 namespace HoloLensDataCollection
 {
-
+	class LocatableCameraSink;
 	class LocatableCamera {
 	public:
 		LocatableCamera();
@@ -13,5 +13,7 @@ namespace HoloLensDataCollection
 
 	private:
 		Platform::Agile<Windows::Media::Capture::MediaCapture^> mMediaCapture;
+		Microsoft::WRL::ComPtr<LocatableCameraSink> mLocatableCameraSink;
+		::Windows::Media::IMediaExtension^ mMediaExtension;
 	};
 }

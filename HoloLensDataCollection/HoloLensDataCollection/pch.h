@@ -126,6 +126,8 @@ using namespace ABI::Windows::System::Threading;
 #include "Common\ErrorHandling.h"
 #include "Common\LinkList.h"
 #include "Common\LocatableCamera.h"
+#include "Common\LocatableCameraSinkStream.h"
+#include "Common\LocatableCameraSink.h"
 #include "Common\Utils.h"
 
 using namespace HoloLensDataCollection;

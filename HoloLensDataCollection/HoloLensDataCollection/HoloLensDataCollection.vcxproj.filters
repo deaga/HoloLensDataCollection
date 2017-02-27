@@ -67,6 +67,12 @@
     <ClCompile Include="Common\LocatableCamera.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="Common\LocatableCameraSinkStream.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LocatableCameraSink.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -100,6 +106,12 @@
       <Filter>Common</Filter>
     </ClInclude>
     <ClInclude Include="Common\Utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LocatableCameraSinkStream.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LocatableCameraSink.h">
       <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>

@@ -55,8 +55,17 @@ LocatableCamera::LocatableCamera() {
 			mMediaCapture = ref new Windows::Media::Capture::MediaCapture();
 			Concurrency::create_task(mMediaCapture->InitializeAsync(initialisationSettings)).then([this]() {
 				FindAndSetMinimumResolution(mMediaCapture);
+				writeToTheFile("Camera is accessible and set with lowest possible resolution");
 				auto properties = safe_cast<Windows::Media::MediaProperties::VideoEncodingProperties^>(mMediaCapture->VideoDeviceController->GetMediaStreamProperties(Windows::Media::Capture::MediaStreamType::VideoPreview));
-			}).then([]() {writeToTheFile("Camera is accessible and set with lowest possible resolution"); });
+				auto profile = ref new Windows::Media::MediaProperties::MediaEncodingProfile();
+				profile->Video = properties;
+				mLocatableCameraSink = Microsoft::WRL::Make<LocatableCameraSink>(properties);
+				mMediaExtension = reinterpret_cast<::Windows::Media::IMediaExtension^>(static_cast<ABI::Windows::Media::IMediaExtension*>(mLocatableCameraSink.Get()));
+				Concurrency::create_task(mMediaCapture->StartPreviewToCustomSinkAsync(profile, mMediaExtension)).then([](Concurrency::task<void> previewTask) {
+						previewTask.get();
+						writeToTheFile("Set the Custom Sink !");
+					 });
+			});
 		}
 	});
 }

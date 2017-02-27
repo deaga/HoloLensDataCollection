@@ -96,6 +96,8 @@
     <ClInclude Include="Common\ErrorHandling.h" />
     <ClInclude Include="Common\LinkList.h" />
     <ClInclude Include="Common\LocatableCamera.h" />
+    <ClInclude Include="Common\LocatableCameraSink.h" />
+    <ClInclude Include="Common\LocatableCameraSinkStream.h" />
     <ClInclude Include="Common\OpQueue.h" />
     <ClInclude Include="Common\Utils.h" />
     <ClInclude Include="HoloLensDataCollectionMain.h" />
@@ -111,11 +113,13 @@
   <ItemGroup>
     <ClCompile Include="AppView.cpp" />
     <ClCompile Include="Common\LocatableCamera.cpp" />
+    <ClCompile Include="Common\LocatableCameraSinkStream.cpp" />
     <ClCompile Include="HoloLensDataCollectionMain.cpp" />
     <ClCompile Include="Common\DeviceResources.cpp" />
     <ClCompile Include="Common\CameraResources.cpp" />
     <ClCompile Include="Content\SpatialInputHandler.cpp" />
     <ClCompile Include="Content\SpinningCubeRenderer.cpp" />
+    <ClCompile Include="LocatableCameraSink.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
